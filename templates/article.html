@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}{{ article.title }} - {{SITENAME}}{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8">
+
+        <div class="mb-3">
+            <h1 class="my-3"> {{ article.title }} </h1>
+            <label>Posted on <strong>{{ article.date|strftime('%Y-%m-%d') }}</strong></label>
+
+        </div>
+        {% if article.og_image %}
+            <img src="/images/{{ article.og_image }}" class="w-100 my-3">
+        {% endif %}
+
+        {{ article.content }}
+
+    </div>
+</div>
+{% endblock %}

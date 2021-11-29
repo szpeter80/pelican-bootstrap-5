@@ -1,0 +1,15 @@
+.article-list.card {
+    border-radius: 10px !important;
+    cursor: pointer;
+}
+.article-list .article-list-vertical {
+    background: rgb(0,0,0);
+    background: linear-gradient(
+        180deg, 
+        
+        rgba(0,0,0,0) 0%, 
+        rgba(0,0,0,0) 40%,
+        rgba(0,0,0,0.7) 99.9%,    
+    );
+    background-size: 100% 100%;
+}
